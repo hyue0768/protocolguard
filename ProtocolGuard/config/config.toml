@@ -4,13 +4,14 @@ path = ""                   # TODO: Path to the WPA extracted indirect function 
 
 # Database configuration
 [database]
-path = "/root/llvm-pass-project/"  # SQLite database path
+path = "./work/"  # SQLite database path
 
 # LLM service configuration
 [llm]
-llm_api_platform = "https://www.chatgtp.cn/v1/chat/completions" # TODO: change to your own api platform
-llm_model_deepseek_v3 = "deepseek-ai/DeepSeek-V3-0324"  # TODO: change to your model name for DeepSeek-V3 in the API platform
-llm_model_deepseek_r1 = "deepseek-ai/DeepSeek-R1-0528"  # TODO: change to your model name for DeepSeek-R1 in the API platform
+tokenizer_path = ""  # Local model-tokenizer directory; no automatic download
+llm_api_platform = "" # TODO: change to your own api platform
+llm_model_deepseek_v3 = ""  # TODO: change to your model name for DeepSeek-V3 in the API platform
+llm_model_deepseek_r1 = ""  # TODO: change to your model name for DeepSeek-R1 in the API platform
 llm_query_repeat_times = 1
 llm_query_max_attempts = 10
 llm_violation_repeat_times = 3 
@@ -18,7 +19,7 @@ llm_multithread = 32
 
 # Information of the project under test
 [project]
-project_path = "/root/llvm-pass-project/"
+project_path = "./work/"
 packet_related_callgraph_path = ""   # TODO: Path to the packet-related callgraph report, i.e., the output of `program_slicing/build/src/libAnalyzerPass.so`
 function_arg_path = ""   # TODO: Path to the function argument summary, i.e., the output of `program_slicing/build/src/libAnalyzerPass.so`
 rule_path = ""   # TODO: Path to the rule configuration file, i.e., the output of `rule_extraction/`

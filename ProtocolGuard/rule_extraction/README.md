@@ -1,56 +1,11 @@
-# Rule Extraction
+# Rule extraction
 
-This module extracts protocol rules from specification documents through a three-step process.
+This module preprocesses a protocol HTML specification, constructs keywords, and extracts rule candidates. Its legacy language-model stages use the DeepSeek service defaults in the module sources and keyword configuration; inspect those settings before supplying credentials. Generated candidates require human review before they become slicing rules.
 
-## Usage
-
-### Step 1: Document Processing
-
-Preprocess the protocol document, including packet format keyword extraction and sentence segmentation.
+From the repository root, after installing dependencies and setting `OPENAI_API_KEY`, run:
 
 ```bash
-cd /root/projects/protocolguard_artefact/rule_extraction/documentProcess/
-python3 __main__.py --api-key SET_LOCALLY --protocol mqtt --version 5.0 --html-file /root/projects/protocolguard_artefact/rule_extraction/documentProcess/directoryStore/mqtt.html
+python3 ProtocolGuard/rule_extraction/main.py --protocol mqtt --version 5.0 --html-file /absolute/path/to/specification.html
 ```
 
-**Parameters:**
-- `--api-key`: Your DeepSeek API key
-- `--protocol`: Target protocol name (e.g., mqtt, http)
-- `--version`: Protocol version (e.g., 5.0)
-- `--html-file`: Path to the protocol specification HTML file
-
-### Step 2: Keyword Extraction and Update
-
-Extract and update keywords from the processed document.
-
-```bash
-cd /root/projects/protocolguard_artefact/rule_extraction/keywordProcess/
-python3 __main__.py --apikey 0674a7da275f403885286fb7cbaxxxxx --protocol MQTT --version 5.0
-```
-
-**Parameters:**
-- `--apikey`: Your DeepSeek API key
-- `--protocol`: Target protocol name 
-- `--version`: Protocol version
-
-### Step 3: Rule Processing
-
-Process and extract protocol rules from the analyzed content.
-
-```bash
-cd /root/projects/protocolguard_artefact/rule_extraction/ruleProcess
-python3 __main__.py --apikey 0674a7da275f403885286fb7cbaxxxxx --protocol MQTT --version 5.0
-```
-
-**Parameters:**
-- `--apikey`: Your DeepSeek API key
-- `--protocol`: Target protocol name
-- `--version`: Protocol version
-
-## Output
-
-The pipeline generates several output files in the respective `directoryStore/` folders:
-
-- **Step 1**: Processed document with filtered headings and separated sentences
-- **Step 2**: Extracted keywords (specify, modal, comparative)
-- **Step 3**: Final protocol rules in JSON format
+This command performs model calls. The generic workflow, intermediate paths, rule JSON schema, and offline alternative are documented in [HOW_TO_USE.md](../../HOW_TO_USE.md). The document processor writes a local configuration containing its API key; that generated directory is ignored by Git and should remain private.

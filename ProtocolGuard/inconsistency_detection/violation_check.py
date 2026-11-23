@@ -64,7 +64,9 @@ def clean_think_content(input_string):
     return cleaned_string
 
 def count_token_length(prompt):
-    chat_tokenizer_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./")
+    chat_tokenizer_dir = config["llm"].get("tokenizer_path")
+    if not chat_tokenizer_dir:
+        raise ValueError("Set llm.tokenizer_path to a local tokenizer directory before model review")
     tokenizer = transformers.AutoTokenizer.from_pretrained(chat_tokenizer_dir, trust_remote_code=False, local_files_only=True)
     result = tokenizer.encode(prompt)
     return len(result)

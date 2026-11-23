@@ -7,3 +7,12 @@ __pycache__/
 .venv/
 node_modules/
 build/
+build18/
+work/
+ProtocolGuard/rule_extraction/documentProcess/directoryStore/
+ProtocolGuard/rule_extraction/ruleProcess/directoryStore/
+ProtocolGuard/rule_extraction/keywordProcess/directoryStore/*
+!ProtocolGuard/rule_extraction/keywordProcess/directoryStore/config.json
+*.db
+*.db-shm
+*.db-wal

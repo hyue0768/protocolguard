@@ -1,0 +1,3 @@
+{
+  "length-check": {"handlers": ["handler.py::handle_message"], "context": []}
+}

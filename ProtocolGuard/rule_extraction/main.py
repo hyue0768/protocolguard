@@ -1,5 +1,6 @@
 # protocolProject/main.py
 import argparse
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -35,24 +36,16 @@ def main():
         description="Protocol Analysis Full Process Management System",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument("--apikey", help="DeepSeek API Key")
+    parser.add_argument("--apikey", help="Model API key (defaults to OPENAI_API_KEY)")
     parser.add_argument("--protocol", required=True, help="Protocol name (e.g., MQTT, HTTP)")
     parser.add_argument("--version", required=True, help="Protocol version (e.g., 5.0, 1.1)")
     parser.add_argument("--html-file",
                         help="Original HTML file path (relative to current directory)")
-    parser.add_argument("--profile", help="Offline x402 profile JSON (paths relative to the profile)")
     args = parser.parse_args()
-    if args.protocol.lower() == "x402":
-        if args.version != "2":
-            parser.error("The pinned offline x402 profile supports protocol version 2")
-        pipeline = Path(__file__).resolve().parents[1] / "x402/pipeline.py"
-        cmd = [sys.executable, str(pipeline)]
-        if args.profile:
-            cmd += ["--profile", str(Path(args.profile).resolve())]
-        subprocess.run(cmd, check=True)
-        return
+    args.apikey = args.apikey or os.environ.get("OPENAI_API_KEY")
     if not args.apikey or not args.html_file:
-        parser.error("Legacy protocols require --apikey and --html-file; x402 uses the offline profile")
+        parser.error("Set OPENAI_API_KEY (or --apikey) and provide --html-file")
+    base_dir = Path(__file__).resolve().parent
 
     # Verify HTML file exists
     html_path = Path(args.html_file)
@@ -65,23 +58,23 @@ def main():
         {
             "name": "Document Processing Stage",
             "cmd": [
-                sys.executable, "-m", "documentProcess",
+                sys.executable, str(base_dir / "documentProcess/__main__.py"),
                 "--api-key", args.apikey,
                 "--protocol", args.protocol,
                 "--version", args.version,
                 "--html-file", str(html_path.absolute())
             ],
-            "cwd": None  # Execute in root directory
+            "cwd": str(base_dir)
         },
         {
             "name": "Keyword Processing Stage",
             "cmd": [
-                sys.executable, "-m", "keywordProcess",
+                sys.executable, str(base_dir / "keywordProcess/__main__.py"),
                 "--apikey", args.apikey,
                 "--protocol", args.protocol,
                 "--version", args.version
             ],
-            "cwd": None
+            "cwd": str(base_dir)
         },
         {
             "name": "Rule Processing Stage",
@@ -91,7 +84,7 @@ def main():
                 "--protocol", args.protocol,
                 "--version", args.version
             ],
-            "cwd": "ruleProcess"  # Need to execute in subdirectory
+            "cwd": str(base_dir / "ruleProcess")
         }
     ]
 

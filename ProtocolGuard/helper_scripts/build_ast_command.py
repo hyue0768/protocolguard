@@ -2069,7 +2069,7 @@ def save_command_script(commands, output_file, project_name):
 def save_commands(commands, output_file):
     with open(output_file, "w", encoding="utf-8") as f:
         for directory, cmds in commands.items():
-            f.write(f"
+            f.write(f"# Directory: {directory}\n")
             for cmd in cmds:
                 f.write(f"{cmd}\n")
             f.write("\n")

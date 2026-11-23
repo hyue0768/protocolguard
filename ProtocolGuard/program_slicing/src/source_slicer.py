@@ -1,5 +1,5 @@
 """Offline Python backend: conservative function closure, explicit decisions, no model calls.
-Paper Algorithm 1 adaptation for x402's Python SDK; not LLVM-equivalent slicing.
+Protocol-independent Python source context; not LLVM-equivalent slicing.
 """
 import ast
 import json
@@ -82,3 +82,33 @@ def slice_python(root, rules, decisions, db_path):
                             'unresolved_calls':{k:unresolved[k] for k in sorted(seen) if unresolved[k]},
                             'limits':'whole functions; local calls only; imported/dynamic calls need explicit context; no semantic verdict'})
     return reports
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source", type=Path, required=True)
+    parser.add_argument("--rules", type=Path)
+    parser.add_argument("--decisions", type=Path)
+    parser.add_argument("--database", type=Path)
+    parser.add_argument("--report", type=Path)
+    parser.add_argument("--list-functions", action="store_true")
+    args = parser.parse_args()
+    if args.list_functions:
+        print(json.dumps(sorted(index_sources(args.source)), indent=2))
+        return
+    if not all([args.rules, args.decisions, args.database, args.report]):
+        parser.error("Supply --rules, --decisions, --database and --report, or use --list-functions")
+    rules = json.loads(args.rules.read_text())
+    decisions = json.loads(args.decisions.read_text())
+    if not isinstance(rules, list) or not isinstance(decisions, dict):
+        parser.error("rules must be an array and decisions must be an object")
+    args.database.parent.mkdir(parents=True, exist_ok=True)
+    args.report.parent.mkdir(parents=True, exist_ok=True)
+    result = slice_python(args.source, rules, decisions, args.database)
+    args.report.write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps({"database": str(args.database), "report": str(args.report), "rules": len(result)}))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,3 @@
+[
+  {"id": "length-check", "rule": "The handler must reject a negative declared length."}
+]

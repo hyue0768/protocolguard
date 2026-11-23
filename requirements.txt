@@ -1,0 +1,14 @@
+beautifulsoup4
+html2text
+lxml
+openai
+openpyxl
+pandas
+requests
+pyshark
+scapy
+sqlparse
+tenacity
+toml
+tqdm
+transformers
