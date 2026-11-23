@@ -1,0 +1,965 @@
+{
+  "scope": "ProtocolGuard experiment source code, tests, static configuration and usage documentation",
+  "excluded": "credentials, environments, binaries, model responses, runtime ledgers, historical result datasets, upstream source snapshots and manuscript PDFs",
+  "files": [
+    {
+      "file": "ProtocolGuard/refs.bib",
+      "bytes": 32905,
+      "sha256": "e0dbe2f90aa84704b2e294f192863104ac48dfbfb0c25d33cd419006bc1f7906"
+    },
+    {
+      "file": "ProtocolGuard/LICENSE",
+      "bytes": 1055,
+      "sha256": "3bed3331b7048bac17cf50e249d560ccc9508c970da8d7b9283bf4f2e633a91d"
+    },
+    {
+      "file": "ProtocolGuard/README.legacy.md",
+      "bytes": 5957,
+      "sha256": "f7f495f42475dc09d0bce88d30d344eccfbfdc809b8f74e8778f596b9578b000"
+    },
+    {
+      "file": "ProtocolGuard/README.md",
+      "bytes": 2052,
+      "sha256": "d9a8ae4559cf5aabe8730a1206bbbb806ff3d197690ed1c435da9f45bd3c3903"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/CMakeLists.txt",
+      "bytes": 807,
+      "sha256": "70b8b3270006f0cdd4edd21afb306c574d94d0576d8ac9b308c187bb19cd6c09"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/build_local.sh",
+      "bytes": 394,
+      "sha256": "90076c085fd8635f85c1b49593aa5fa86d1e24c6e8bf3b8a7a8ab96f1009655b"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/src/Passes.cpp",
+      "bytes": 11489,
+      "sha256": "815633f7ddd9cac47b87a9e96b04fa986c7bfc83bbd003027288c494bb045a74"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/src/ast_export.py",
+      "bytes": 3517,
+      "sha256": "d4942211b56177848833c1455bbf67b547d09ca4c494807bd452bfbf1dedf3d7"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/src/CMakeLists.txt",
+      "bytes": 173,
+      "sha256": "c4efb4889e03b6b328fd17b7fee42281fdc8723af43c05560797d03880d9bfdd"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/src/source_slicer.py",
+      "bytes": 4324,
+      "sha256": "cfa152332dc3601a8938ec54c493992a12c24c9e2209021f89d478a230f2af1b"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/src/llvm_driver.py",
+      "bytes": 3826,
+      "sha256": "553296b227bea16c181a150b97a98ef81eadd6dfcfb59832bf9dac39be8d05e7"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/include/toml.hpp",
+      "bytes": 488695,
+      "sha256": "621a487df47cdab36968f23b6e5ea4ee76ee4e428d0c84f6c2db9dcb632df66c"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/include/Utils.h",
+      "bytes": 36045,
+      "sha256": "1ad04dd5c92df566903eb5993264c8b733b2fa801d92f78ce24581fb97090d4b"
+    },
+    {
+      "file": "ProtocolGuard/program_slicing/include/Analyzer.h",
+      "bytes": 340,
+      "sha256": "f1917109da3c3e152396487c2da1248d7c47b4b7b7da9ce92b3857e4b29b06b2"
+    },
+    {
+      "file": "ProtocolGuard/example/MQTTv5.json",
+      "bytes": 53725,
+      "sha256": "757464769f9ab949c8bf4bb4049c5031f353caa72c517d13544669c52ed6e51f"
+    },
+    {
+      "file": "ProtocolGuard/example/README.md",
+      "bytes": 13114,
+      "sha256": "5f82b082ecc372983c330e6b2c6819a0caf301700ef809c568f72cf48ca7ceeb"
+    },
+    {
+      "file": "ProtocolGuard/x402/map_release_specs.py",
+      "bytes": 16324,
+      "sha256": "189a7d4624405a00aec4dba7fc012df3d1e1c6765b20d39aa7a079f4c29381d1"
+    },
+    {
+      "file": "ProtocolGuard/x402/review_resume.py",
+      "bytes": 5830,
+      "sha256": "d6e35a22ea868795d82d7a8072afc4477deb130d1ff723a70fdbe80d8bf14c48"
+    },
+    {
+      "file": "ProtocolGuard/x402/batch_scan.py",
+      "bytes": 27165,
+      "sha256": "56cd8b9f20784a4814d9b9f8b82d5a066eeb7271c76474fca20d49fdfcc8fdaf"
+    },
+    {
+      "file": "ProtocolGuard/x402/extraction_format.py",
+      "bytes": 2164,
+      "sha256": "0751623cc233df7a720440bc0bb7cc2b1fe61fa3cfe62eeb5c3924c537008aaa"
+    },
+    {
+      "file": "ProtocolGuard/x402/validate_release_spec_map.py",
+      "bytes": 3976,
+      "sha256": "1603995c9411c64190ef9045868076152fd89c5c188a0a13abcfd226c8ba3ae7"
+    },
+    {
+      "file": "ProtocolGuard/x402/flow_analysis.py",
+      "bytes": 7843,
+      "sha256": "aa1737baaed3baacee888fce33c20cf812c442e95a6ed7c4bc97a410b8254644"
+    },
+    {
+      "file": "ProtocolGuard/x402/rules.json",
+      "bytes": 1394,
+      "sha256": "896fbf764498dc71bafc7f5938b7e4ea9788365bf7e7f8cfd912c12a92b2ecd8"
+    },
+    {
+      "file": "ProtocolGuard/x402/judge_wrapper.py",
+      "bytes": 6374,
+      "sha256": "3ee73e72c85cdf2d3fd38b816de713184b7e71c186ed175b7a876f0c5a883e7f"
+    },
+    {
+      "file": "ProtocolGuard/x402/report_audits.py",
+      "bytes": 29423,
+      "sha256": "8c0a08f86b95f93f6c2ac4d70beae1959fc127fa677110ed738c21011e0c6331"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment_adapter.py",
+      "bytes": 5621,
+      "sha256": "6883d11df133563370297ef9b6adcdf544de0cb66842ea9c48bb96d8c9df1820"
+    },
+    {
+      "file": "ProtocolGuard/x402/relevance_view.py",
+      "bytes": 5067,
+      "sha256": "42b013dd1411b32c1c23a8ab0d080448d1010f4f35dc2cf0d6f1c27689d28432"
+    },
+    {
+      "file": "ProtocolGuard/x402/assertion_validation.py",
+      "bytes": 2346,
+      "sha256": "e1b5bd3309d624d6d0f6bdcbda1e9c56d380e826c8cfc19000728d5036571dc6"
+    },
+    {
+      "file": "ProtocolGuard/x402/requirements.lock",
+      "bytes": 113,
+      "sha256": "6ce93ac16e0dd4291c51a2598c8d9400697dae7b9230c029a940b2f633552a18"
+    },
+    {
+      "file": "ProtocolGuard/x402/version_audit.py",
+      "bytes": 54461,
+      "sha256": "91da8e0fa33b9d828bbba74114d867d6e8b9ebc6845f4b1422078d07dea6148f"
+    },
+    {
+      "file": "ProtocolGuard/x402/verify_sdk.py",
+      "bytes": 3439,
+      "sha256": "c0d4cf4f6cd1907f20eb5e95ed2f328e502b814e6b848de3d8ab307ef0256e22"
+    },
+    {
+      "file": "ProtocolGuard/x402/pipeline.py",
+      "bytes": 5100,
+      "sha256": "e82d881b20edb5197e6e36307e9a627382fee5de747add58a1e6dbcd2c56bc48"
+    },
+    {
+      "file": "ProtocolGuard/x402/location_partitions.py",
+      "bytes": 1794,
+      "sha256": "b10070eefcec260b80bcb05409ea1fdc8abb89a949ae8c49b01ae7d7e05d6c53"
+    },
+    {
+      "file": "ProtocolGuard/x402/native_adapters.py",
+      "bytes": 6388,
+      "sha256": "1c4c5747f2e3879b65cbd547ed43da9e8f975d57223e3da00072cdab15a8025b"
+    },
+    {
+      "file": "ProtocolGuard/x402/migrate_ws2.py",
+      "bytes": 4801,
+      "sha256": "5f95727982d1b371642ec190b5f7cad9fde1cd28d1eaa85bdceb17aeffebec82"
+    },
+    {
+      "file": "ProtocolGuard/x402/profile.json",
+      "bytes": 401,
+      "sha256": "0d0854a2a75a15dc302973aae53c52f5bc9c31e082aab24660bab56d68b2e3c3"
+    },
+    {
+      "file": "ProtocolGuard/x402/chunked_review.py",
+      "bytes": 12318,
+      "sha256": "8144bb604fb02924ffdba2726c8a440879c6a08ede76a15051e7cc4c11e3eee8"
+    },
+    {
+      "file": "ProtocolGuard/x402/parallel_scan.py",
+      "bytes": 10190,
+      "sha256": "081e5b0e3c702773d5ec5fcdc1de927c8046e9f1fb92471a8d88bf72e30df7f0"
+    },
+    {
+      "file": "ProtocolGuard/x402/context_encoding.py",
+      "bytes": 2869,
+      "sha256": "f88c997a6f48bd9f6d5323baa07ff9e2f5e5898f6879adc95a2bdea1dde6830c"
+    },
+    {
+      "file": "ProtocolGuard/x402/evidence_format.py",
+      "bytes": 2840,
+      "sha256": "cdc6c697e4a1f8bade7593f002d0953f9ba487751b93d99135360126e1706a5c"
+    },
+    {
+      "file": "ProtocolGuard/x402/private_route.py",
+      "bytes": 2642,
+      "sha256": "2c07e287ab613be0967d24bb0a636beb6c573907a7012829175cc18fea53af59"
+    },
+    {
+      "file": "ProtocolGuard/x402/README.md",
+      "bytes": 435,
+      "sha256": "1fcbc966eb4e73a36821afd32b503e4cdc2d1222d9c1fc0da9f73016e570b1a7"
+    },
+    {
+      "file": "ProtocolGuard/x402/conservative_slice.py",
+      "bytes": 2353,
+      "sha256": "d6e0f8d9026daf27101bafb5dacf3fb528e9946f2ae08f7fe247b2b3a11c1b4f"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_location_context.py",
+      "bytes": 3307,
+      "sha256": "2fa2af9c01d8e2766219ceb7ab276faaf8bf1533c43c3f12c5001bd2d58bcc68"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_audit_reports.py",
+      "bytes": 4935,
+      "sha256": "194b4d8ad0a9aa2965d29b8ec476c5ade4d214d858acc2e97c47ae2d20954c18"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_user_spec_codex_api.py",
+      "bytes": 5159,
+      "sha256": "2afa1f0677b453835d0d6cb3cd87726a7526a737a9238d3cef6071204df9ed74"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_location_partitions.py",
+      "bytes": 4110,
+      "sha256": "10811d57a66cf7286f5e50d4c1d0300bbce8ce1e9ee7d8c10c82cb1cba126a20"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_pipeline.py",
+      "bytes": 2000,
+      "sha256": "b53c736ec5c6feedad50573d2cb6f854322cf6eba93aa4f51c5745e8ecd43833"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_judge_wrapper.py",
+      "bytes": 5241,
+      "sha256": "ba8785ce76649b394ce93149e640fdae04f28a4139468f41c40df38417893965"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_payment_validity_entry.py",
+      "bytes": 1255,
+      "sha256": "78c5267d6b9cf525a185cbd18f0974ba44de83c4ce7d3dee3f6d96ae34e140b9"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_context_encoding.py",
+      "bytes": 1306,
+      "sha256": "9115a2bf211d2ec2c20c1cf7e65959f22b3b0958d3d2f2aa616d60eb22dc706d"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_user_spec_harness.py",
+      "bytes": 3859,
+      "sha256": "b971b24f250b14cc87b983e1ce063817de0478ef8e484b4877837306dcc966c7"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_extraction_schema.py",
+      "bytes": 1884,
+      "sha256": "bc9c51ed5f519a2f68bc9873b8b0d79b6e250befa716a6ca15fd1c1c527ab05b"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_version_audit.py",
+      "bytes": 8264,
+      "sha256": "e88c335a3b0290ebdf0d4e3bcb34e2231c342c2ec33c9d9a9ec43f63a499017c"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_user_spec_api.py",
+      "bytes": 4091,
+      "sha256": "74bcf714f25ec955a18848fae528b50e5fb9398af2f786c91a275acf2b439971"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_parallel_scan.py",
+      "bytes": 4779,
+      "sha256": "bf2e46fbc405ebc589fd31c8c208e89b4db5c8f672a897e33af2d0cdbbff8038"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_extraction_format.py",
+      "bytes": 3041,
+      "sha256": "cfd2a5ab169a686c16285e97d6a96cc17a5dc6a8f12cc2588203878ec09c7c6e"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_assertion_validation.py",
+      "bytes": 2138,
+      "sha256": "479ed3e89672c4a2ba50b26f5df5cc6f68d3b3d883d1a55f8ee06b49ab84ff56"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_evidence_format.py",
+      "bytes": 2191,
+      "sha256": "72b80b62c9280ad8d22c0244b15bdbb0d8bac2246a91a489a48974eff5a1ba32"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_payment_validity.py",
+      "bytes": 3616,
+      "sha256": "6408cdc0e00cf7b6ecfb4ad4877d953525272692ead32aed69753463dba9b6c5"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_llvm.py",
+      "bytes": 3711,
+      "sha256": "0204024ca273e6ae0d50d5fc3b25245950ccedbd0308f73cdd25652629b9ce80"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_server_protection_bridge.py",
+      "bytes": 2426,
+      "sha256": "8b33ea6f69f1430b66e95eddc8f5e902fdc50b81dc4d25812f67233352060fcf"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_payment_adapter.py",
+      "bytes": 1400,
+      "sha256": "7240750ef7f1b592120c81330497a6c7c1f297688651b42882434cae23450527"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_relevance_view.py",
+      "bytes": 5730,
+      "sha256": "056b5dddbad7ec478ec304e2eeb16dd67b1214e0662f76a4a9bcafa8dcead4df"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_native_adapters.py",
+      "bytes": 2224,
+      "sha256": "cce027e902cf194307ce1556e689aac6aa94bd4222dd708a0133ca722d8f6eba"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_flow_analysis.py",
+      "bytes": 2470,
+      "sha256": "86f2cd944740337146c3498bfe405b55f15c4a1f68ddbbbb36d4118009de1203"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_review_resume.py",
+      "bytes": 4257,
+      "sha256": "40fc65747afb8457f70992b8909b798aac8b0228f4f0ac106d7925dba25a940b"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_chunked_review.py",
+      "bytes": 4693,
+      "sha256": "4a431eb862c5957e6b05e2ea4ac3414b3241849e403007a1b4668c609673b85b"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_conservative_slice.py",
+      "bytes": 1984,
+      "sha256": "1deb9266ef6386dead3c24f8b835cc69b7d2c586c4e5bc3b23fc94df49b85ce5"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_batch_scan.py",
+      "bytes": 12318,
+      "sha256": "c2df7b3d359c06e3a49539fb0d64a28dbf377ca4959cbd57bf409b44cda145bd"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_json_mode_input.py",
+      "bytes": 2157,
+      "sha256": "c8c6c1c549454e9c0a5270dd09148a0bd5a2435bf19ed0a0ca0e84ce94387834"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_directed18.py",
+      "bytes": 3960,
+      "sha256": "d10db7d8d4deb466a6cb7139c0fb20cc843790b236580947b95cf7902ea692be"
+    },
+    {
+      "file": "ProtocolGuard/x402/tests/test_driver.py",
+      "bytes": 1540,
+      "sha256": "cf13929d3728bc7aef4b52952c501d0a2df98c4ed26ab81b5be603591b3be073"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm/run_sample.py",
+      "bytes": 6285,
+      "sha256": "ca8b7ae5c06664eb7619df8edfdd11002a7d12332b65425d74db301e31087005"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm/README.md",
+      "bytes": 2227,
+      "sha256": "0585e445e7647f30e73adaa787490f4603943ccebd32876aec8a9f587ab28c71"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm-judge/validate.py",
+      "bytes": 3037,
+      "sha256": "24665a0245c5ee1c396d4bb673bf444a646c03b5d43fe4ea820d7ec4b33fa29a"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm-judge/collect.py",
+      "bytes": 7311,
+      "sha256": "319ef7322529c465f231e8b19467e8d35797520dd22f73200d429303a106a373"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm-judge/build_analysis.py",
+      "bytes": 42313,
+      "sha256": "417c90fa83456340d38ac3cd438d9900b9694376c0b71a4364204fbe07cb00b2"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm-judge/inspect_sources.py",
+      "bytes": 6322,
+      "sha256": "0f4cd74700641485635ddad34f873ed47da3425832275f7085648513d271c22e"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm-judge/README.md",
+      "bytes": 1680,
+      "sha256": "8bf5ad98c0156891cde895be505395877f3695980164bb4aff9847672d62c1d0"
+    },
+    {
+      "file": "ProtocolGuard/x402/llm-judge/semantic-review/resolve_sources.py",
+      "bytes": 2578,
+      "sha256": "ec64816038b620a281acafde2bc85860500623d3835192d79c9537cd53b0071a"
+    },
+    {
+      "file": "ProtocolGuard/x402/version-audits/MANUAL-SCAN.md",
+      "bytes": 7640,
+      "sha256": "144d233259d6da88fc7887dac47e8d31072d092d79ba8f3750367f45ac5aae3a"
+    },
+    {
+      "file": "ProtocolGuard/x402/version-audits/IMPLEMENTATION-STATUS.md",
+      "bytes": 10625,
+      "sha256": "17864c1f92d543115f5eefc1bbfc24772eada44a062c17b0ebef67f5ae6b04a4"
+    },
+    {
+      "file": "ProtocolGuard/x402/version-audits/README.md",
+      "bytes": 11315,
+      "sha256": "0aa5717d449740f1b41d8b6b58cab494cfb99e8dbf50d12d9a8715f4920c861e"
+    },
+    {
+      "file": "ProtocolGuard/x402/release-spec-map/README.md",
+      "bytes": 7280,
+      "sha256": "e2d77c1cb92dc96518e36b6e4cbdffc60a60506416438b378e0e4351733e94fc"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/render.py",
+      "bytes": 14127,
+      "sha256": "b934cdee6fb172d3081ba731243d7b56134d2846689ca292679977b112d3e518"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/audit.py",
+      "bytes": 21097,
+      "sha256": "d6d51a7f3ab2909c9a5003b788f2bebb1b6302034a3a488f074ccb3e6668ba87"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/normalize_scope.py",
+      "bytes": 1179,
+      "sha256": "94cc60d26fe07262af2f9fa56aaf9b4c1c3adbbe9afd6df564a3da9cd53e0bc5"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/fill_manifest_cache.py",
+      "bytes": 1587,
+      "sha256": "389cc5527d61666387aea066b8cd3a8046ebed12516f18479ef3d99d48a4552c"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/refresh_dynamic.py",
+      "bytes": 2470,
+      "sha256": "1f7d2e70aef99ee603d32c102cf2acb400d1e91a28992aa1b0d279bfc57db57d"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/package_probe.py",
+      "bytes": 1545,
+      "sha256": "411a3b3378780114d203e0534566b04786573d479063f6498ff7568e7ab7d296"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/python_probe.py",
+      "bytes": 2951,
+      "sha256": "b943d89e087e9f633ab9860c04f6f2948901ec0463121ad48c4a0a76435bb814"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/requirements.lock",
+      "bytes": 156,
+      "sha256": "6213b6316f21a72a9fec20d108eaa046deb91a7ab68e13e8530c550716dfe310"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/add_diffs.py",
+      "bytes": 911,
+      "sha256": "23a7516de983e33e9bd4eb464a634f1e3ca811c88056cd5a56fad90b322f2f4a"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/enrich_intervals.py",
+      "bytes": 1877,
+      "sha256": "69031650b343d4d535d39ceb84db9b6d62f7059f01e7954c6b9c0d515cbd6a57"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/run_offline.py",
+      "bytes": 484,
+      "sha256": "32d5496d964157c9cada22d5a8d81e33bae725a612c733be7a85a9d4c481f9ae"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/validate_artifacts.py",
+      "bytes": 1353,
+      "sha256": "bee3076dd1ef1e2c8e684213391ea16e42a7694e3a57853dbe2d6305114a008d"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/schema_refresh.py",
+      "bytes": 2400,
+      "sha256": "f491d60ac80d5bab8e14dbf537f9d1b0be6d65c3d39101aae062c3bf152de490"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/rebuild_contexts.py",
+      "bytes": 1570,
+      "sha256": "e1a646225a4ce834f0ded0dee5f4425528a2d386e22ddd432303f0784717b5d5"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/annotate_inputs.py",
+      "bytes": 1437,
+      "sha256": "bdb0435a5eff86414df06c93b919dab6f2c6889498302e30a60a629ba07297d9"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/reproduce.py",
+      "bytes": 1571,
+      "sha256": "dcf7a1c74430212be3f56fb70923d5be08b3812b9f8142855ac12712b50c4cf7"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/package_scope.py",
+      "bytes": 1375,
+      "sha256": "b5b7e651f9784d32b06f51dfce5342998f65c86f0c60b58761db478849010909"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/README.md",
+      "bytes": 9128,
+      "sha256": "793e940fcbed1eb0699113fac8c35160f61977f24d20de970bdbb8c96522d023"
+    },
+    {
+      "file": "ProtocolGuard/x402/releases/tests/test_audit.py",
+      "bytes": 2146,
+      "sha256": "a1a16d18435eef8b087d3c6bf643d93ddd0342e2852db16d0980848d6e6679e0"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/target.json",
+      "bytes": 193,
+      "sha256": "2aee46536c2af0e2c98c58155d1c888a49ed33d7923e21cdd5ba7ea11f193dcc"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/deepseek_api_user_spec.py",
+      "bytes": 9304,
+      "sha256": "b608a0474f946f54f0c18925a12c3832a269a707dfcbc3f6442621fa515a0141"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/deepseek_harness_user_spec.py",
+      "bytes": 20498,
+      "sha256": "dbfbc0650be4af34dfbe680fe7f0edc7bbb8ecfa9af2c7a2e92953f4091f1d3e"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/head-check.json",
+      "bytes": 2746,
+      "sha256": "ea5a8713ba5907209116981bfe0cfbe5c8143899fd4a62a4e6e758e8ee158f65"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-security-spec.json",
+      "bytes": 14863,
+      "sha256": "19b499fc32bd2db59e04d65e7c28b45f6208c94036080cbf76932111a10fce63"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/validate_server_protection.py",
+      "bytes": 12639,
+      "sha256": "e414ba21e1438fc0d5282c25eefcb24cdd60a0287bc4d0aba5e9e9469068cad3"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/validate_payment_validity.py",
+      "bytes": 9425,
+      "sha256": "2677be18fba135211e7ea7ea6cd054101336cbd4497e7d3fcb91507862b05096"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/codex_api_user_spec.py",
+      "bytes": 9053,
+      "sha256": "3c6b0399a697382f31330d60c2a66e6322443bb0221c432c56a93784cda59d94"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/slice_user_spec.py",
+      "bytes": 16401,
+      "sha256": "53364338f8842f16e0556d1b53decd8cdc916def829ebc04f9bf44a95e24a902"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/llm_audit.py",
+      "bytes": 8534,
+      "sha256": "ae110ec5a51b59cb2629fe56cdf2030bcb5343fd14de14c0db40e6590a1160d6"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/http/express/src/index.ts",
+      "bytes": 18810,
+      "sha256": "c91adb8f99f4ce36dda7b7d74b062d89a6bf5a7ec1077ca7f5d5822d2f7442fb"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/http/fetch/src/index.ts",
+      "bytes": 7927,
+      "sha256": "389bb2a0aabaa89efc908fced90fb12d33260c5bb740163d3f0a0e5d01d6dcb7"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/core/src/http/httpFacilitatorClient.ts",
+      "bytes": 22469,
+      "sha256": "91d46f4d920fabcf60d898966bb8c9b87f2220b41b97ad4d4446f54bd4eed620"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/core/src/http/x402HTTPResourceServer.ts",
+      "bytes": 52274,
+      "sha256": "4315e76d26a9e2a19c845ffb6e8302b9b3bc7e300b03e2d79dcda1884be0a75a"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/core/src/server/x402ResourceServer.ts",
+      "bytes": 85096,
+      "sha256": "6170fceb7e22ce0fd2dfe9b16d51639f7d658abd892f63cda4af99bb6cfd55db"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/core/src/server/paymentFlow.ts",
+      "bytes": 7365,
+      "sha256": "e6e7fc8d9fabd917173419922e870d8006c0b21ee53ecc101ef576ac782bd1f9"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/core/src/facilitator/pendingSettlementStore.ts",
+      "bytes": 5257,
+      "sha256": "761043c5fd3547652f847df85fcc71dcaff0723475471c245b8f71b21164669b"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/core/src/client/x402Client.ts",
+      "bytes": 39922,
+      "sha256": "5d26d0ef62a655648620ae8e96845462984cae67570d464103ea3661fc40907a"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/extensions/src/payment-identifier/resourceServer.ts",
+      "bytes": 2374,
+      "sha256": "2a3ee0d7f3e97018eee61b1fdb6bd6b898b1eb972a1def9c0816478d6a807113"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/extensions/src/payment-identifier/validation.ts",
+      "bytes": 8989,
+      "sha256": "ad67888101d33bd73c14bc5818cd6c9b1bf63e913d726d0bb47a8bde54b466ec"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/mechanisms/evm/src/exact/facilitator/eip3009.ts",
+      "bytes": 21945,
+      "sha256": "9aea6daf0e8f76dc3769f54983eceb960a17f0f9d635dcc3b21c55fc8f858bfc"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/mechanisms/evm/src/exact/facilitator/eip3009-utils.ts",
+      "bytes": 11302,
+      "sha256": "51f34c094888e5986b969896c2137bc4319a9e57f8f936b2e9ee8ea6921b63ad"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-slices/source-context/typescript/packages/mechanisms/evm/src/exact/client/eip3009.ts",
+      "bytes": 2684,
+      "sha256": "d61045776025cfca024561acf4b7f858910f40bbf73041b6b5d25f8035bdabeb"
+    },
+    {
+      "file": "ProtocolGuard/x402/security/user-spec-consistency/supplementary-context/typescript/packages/core/src/http/x402HTTPClient.ts",
+      "bytes": 10612,
+      "sha256": "8db58b9031c17263259a8a92a98c91968b9601a42567b9d5787655e5d4a88904"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/spec.json",
+      "bytes": 1040,
+      "sha256": "6c9d484aceda3bfc874a3d96154e57d7747c688cfa346710c8b62073c5c3d5de"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/run.py",
+      "bytes": 3452,
+      "sha256": "d2a6a8964dd31fff7e9d4a10e165e81d2e5440bac7b15b3afad9bdb29777f9f8"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/README.md",
+      "bytes": 3524,
+      "sha256": "74d5a07618b5c51a757e5d0c4509a1a9a91856974c37f26dab94b2f078186072"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/slices/source-context/typescript/packages/core/src/server/x402ResourceServer.ts",
+      "bytes": 85096,
+      "sha256": "6170fceb7e22ce0fd2dfe9b16d51639f7d658abd892f63cda4af99bb6cfd55db"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/slices/source-context/typescript/packages/core/src/facilitator/pendingSettlementStore.ts",
+      "bytes": 5257,
+      "sha256": "761043c5fd3547652f847df85fcc71dcaff0723475471c245b8f71b21164669b"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/slices/source-context/typescript/packages/mechanisms/evm/src/exact/facilitator/eip3009.ts",
+      "bytes": 21945,
+      "sha256": "9aea6daf0e8f76dc3769f54983eceb960a17f0f9d635dcc3b21c55fc8f858bfc"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/slices/source-context/typescript/packages/mechanisms/evm/src/exact/facilitator/eip3009-utils.ts",
+      "bytes": 11302,
+      "sha256": "51f34c094888e5986b969896c2137bc4319a9e57f8f936b2e9ee8ea6921b63ad"
+    },
+    {
+      "file": "ProtocolGuard/x402/payment-validity/slices/source-context/typescript/packages/mechanisms/evm/src/exact/client/eip3009.ts",
+      "bytes": 2684,
+      "sha256": "d61045776025cfca024561acf4b7f858910f40bbf73041b6b5d25f8035bdabeb"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/requirements.txt",
+      "bytes": 2680,
+      "sha256": "5ad45f01f64906077dfd014dbd9ef7b4dd019804304fa4bd193fb3b3f22637a3"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/main.py",
+      "bytes": 4044,
+      "sha256": "1ab8f0299397c6765424c58430fee105e905540450dcb2bac7c0b2766f4189d1"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/__main__.py",
+      "bytes": 6099,
+      "sha256": "bcd246d7b7d99c07d471904c8debca7e3f4dc442acfe7020e3d166f8c6064384"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/keywords_final.py",
+      "bytes": 11032,
+      "sha256": "30a2cf2efe8bf2c5c8ef0653af036ae93c95420cdf414056d8863a432e8c07bb"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/comparative_keywords_updates.py",
+      "bytes": 5301,
+      "sha256": "0b51fafc4c1d63019fe1756fa3385e7e8766fc08edd52cfe6c907da2046e4bc4"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/keywords.py",
+      "bytes": 5728,
+      "sha256": "a677a48efba98ffd02bfcf252de60ff77c7188c8e00bda20fdb94416d3f716f0"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/specify_keywords_update.py",
+      "bytes": 4491,
+      "sha256": "44e7ea2589f3a7228799cf598ee79abae1941722f3e10b6cc58760bfd4036eb3"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/modal_keywords_update.py",
+      "bytes": 5544,
+      "sha256": "22a306796232cd0e274526d17348f4483a33cd68050c019b14b144fa2c31d879"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/config.json",
+      "bytes": 1100,
+      "sha256": "b7858070695fbeeaeba0c1f9febed7565253595ecf3327b9cd50af04335d9502"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/keyword_list.json",
+      "bytes": 13516,
+      "sha256": "8fecedf9ebeaaddaa8aa041b92556480566dcd6fee7deffbcbb755104f8aa77c"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/paragraphs_output.json",
+      "bytes": 438015,
+      "sha256": "ce22048269aad18d9e39d9ea10d2e09293a8ecd8a5210d52f5c50c0e0d73540a"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/modal_keywords_update_r1.json",
+      "bytes": 75124,
+      "sha256": "34faa9d790858ab06e628a6f278ed0026a3a38ab48d3f172ff5ab45265ba8141"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/comparative_keywords_update_r1.json",
+      "bytes": 37948,
+      "sha256": "c3c5ad3301f91b5be58180839db54cbcf7c10d1290cd389d9e3557ece88eb1d0"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/paragraph_output.json",
+      "bytes": 183734,
+      "sha256": "ce38d58af2e98015b80aabb5cb519321883461400ea242f4d5311df2108111bf"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/keywords_final.json",
+      "bytes": 7554,
+      "sha256": "1afafb0c5e218933a190fa2924346bd3d4372dc1dee4e558cd69a4c8eb572528"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/keywordProcess/directoryStore/specify_keywords_update_r1.json",
+      "bytes": 55659,
+      "sha256": "dc14fe0bc58f03c907feeae7de6d6a2dc5f4e84684ca1a8435b2b25e9563d84d"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/ruleProcess/__main__.py",
+      "bytes": 2573,
+      "sha256": "8962b85da7d35a8ba216d87b70102b011f66835297933c9dadcaa8b6b96460bc"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/ruleProcess/second_rule.py",
+      "bytes": 3565,
+      "sha256": "ce5eba74899cded51aa3ac7a46dadc55b6527527bfeba33bb2d40fccc6fd5748"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/ruleProcess/first_rule.py",
+      "bytes": 2563,
+      "sha256": "d8360a66c8634ad494f025f06252bc75e9c6ada9edc977a89b400a4b0701028b"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/ruleProcess/third_rule.py",
+      "bytes": 4378,
+      "sha256": "4489739d090ca4d06145906b3807e01898009ed597adb55bbdbd46cd27113846"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/ruleProcess/directoryStore/filtered_sentences.json",
+      "bytes": 170488,
+      "sha256": "93210c02162d3fba54a5f663fc8f5ff1742223a32085dbb0cbc6882a42f41942"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/__main__.py",
+      "bytes": 2340,
+      "sha256": "5ceaeadc315082747b956124d186a6cad12e65a3237f098f9f15bc33a999043b"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/separate_sentences.py",
+      "bytes": 4917,
+      "sha256": "be8ec3d6bf9e29692d9e3d473dc6d95c5f148160ded1e062e50f699a9e2f2999"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/specify_keywords.py",
+      "bytes": 2799,
+      "sha256": "6c412e919f74add8db1a5a2b191e0fcc380e7d4a678d122c4466302f831006bd"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/text_process.py",
+      "bytes": 2924,
+      "sha256": "3dcdef06feade4c123a2f4bc4a8597c0b47335fa1098967575985c16d21fc8ab"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/index_filtering.py",
+      "bytes": 3436,
+      "sha256": "22cf54c6f3d296779278174dd348ac2506552875c581b58c31231b0e5fdfa3de"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/html_process.py",
+      "bytes": 4192,
+      "sha256": "364e9ba29a3831522c0134fac28695729059d4e673274dc327e8d54304501987"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/directoryStore/packet-mqtt.c",
+      "bytes": 73414,
+      "sha256": "729c51061acc82493232f439849aca3d9867ce844303c8d564b19a60d8384124"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/directoryStore/text_processed.json",
+      "bytes": 233528,
+      "sha256": "93d3475b8c2edd25bca4778c930f2138a6ec7d4fa64765ec7c9d2835fa2a9488"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/directoryStore/headings.json",
+      "bytes": 30584,
+      "sha256": "1550a3732fa7755618ae1b29bca0ddf58f008f5a395d196d82643518749290c5"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/directoryStore/filtered_headings.json",
+      "bytes": 582944,
+      "sha256": "66bdb18bcc2fcd69fdbe03a94a4a40f6be7d19d54ca55f87f885772fe37b2f2e"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/directoryStore/tables.json",
+      "bytes": 352134,
+      "sha256": "c4f9019ae12f963aa83974b632ee4d14b991772c58472cbaf91a8c9a4b2fe68a"
+    },
+    {
+      "file": "ProtocolGuard/inconsistency_detection/violation_check.py",
+      "bytes": 18724,
+      "sha256": "08676c7429c514d46b7c62d87827b90a1dbc850c66d3f3d71689f8309e41e6ff"
+    },
+    {
+      "file": "ProtocolGuard/config/config.toml",
+      "bytes": 3510,
+      "sha256": "7e26ec674114e711f1386e7797c68721dad9d1671c5bacf289cb7ad77755faa3"
+    },
+    {
+      "file": "ProtocolGuard/config/x402.toml",
+      "bytes": 752,
+      "sha256": "211076fe0d493324211ad2b46f2b0acf4314da30d98ff2853d6eda51d76dde41"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/packet_generate/payload_extractor_batch.py",
+      "bytes": 5921,
+      "sha256": "9002e7929a2336141c2299607075869bbba76ff263d74b505cf8fbaea068deb4"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/packet_generate/gen_packet_tasks.py",
+      "bytes": 16710,
+      "sha256": "397c6e059261af2d8c15078769a8bc69981bca28b2eb04e25e7430a40488d46e"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/packet_generate/payload_extractor.py",
+      "bytes": 10831,
+      "sha256": "211b96a89a02d92e78746786e28140e62b7170f8903e1d19cd7a9672220ded37"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/packet_generate/gen_scapy_scripts.py",
+      "bytes": 7993,
+      "sha256": "a0ecf62299c932710bca9d559a841c141c12bc5b6595c87bf50b86af87078728"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/packet_generate/cursorkleosr/workflow_state.md",
+      "bytes": 10602,
+      "sha256": "80072d79aea1e82e82ad4b368396248ef046d07bd926ebd29794a01879ac336e"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/assert_generate/gen_assert_prompt.py",
+      "bytes": 16517,
+      "sha256": "daf13fa9c5801bd036064813b9006c51b632b49eb1b4840bbef5b6074b015ace"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/assert_generate/cursorkleosr/workflow_state.md",
+      "bytes": 10606,
+      "sha256": "2e79bafe38106c04a26958ac3ca9e62209b6afc2f453ea08bdd31d520493c089"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/DFUZZ/build_directed18.sh",
+      "bytes": 260,
+      "sha256": "6acfce6bbb8b8056e51785c3aeb36671b1a1623a950bfb32978ff5fd1f5d7068"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/DFUZZ/directed.py",
+      "bytes": 12521,
+      "sha256": "1fa984be76b4681127268b06765b86d33d3799ee439cec00ad05a8fbcfaa95bf"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/DFUZZ/CMakeLists.txt",
+      "bytes": 2121,
+      "sha256": "cc5fc4fd9dd92d3de75294c0aff9cb5bc1dfc7b725fdbd6ece6f795289dcd2ba"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/DFUZZ/Directed18.cpp",
+      "bytes": 5090,
+      "sha256": "a8b25bef1199150d5c4283f4a50bbfbbb0476288cc9a01cc8e3d996a36a21583"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/DFUZZ/trace_runtime.c",
+      "bytes": 889,
+      "sha256": "c254216651d7fc3d2b1130390767b413cb27be16b0d14f580fe1c8f860d8ae83"
+    },
+    {
+      "file": "ProtocolGuard/dynamic_verification/DFUZZ/DFUZZPASS.cpp",
+      "bytes": 59325,
+      "sha256": "4b9124f403a207e64eb0b0a71c5882aef2b0a9a957b0c534e84f8b17688c754b"
+    },
+    {
+      "file": "ProtocolGuard/helper_scripts/build_ast_command.py",
+      "bytes": 75009,
+      "sha256": "a69887d09557eb93c35593209857abde919ecff528e4e2d753ec9d4d2cadc6b2"
+    },
+    {
+      "file": "ProtocolGuard/helper_scripts/check_ast_file.py",
+      "bytes": 2119,
+      "sha256": "a350652084afbeef6feb8c15d8a1c7732a4570ee39119fce7d868193e3d015e7"
+    },
+    {
+      "file": "ProtocolGuard/helper_scripts/indirect_callgraph.py",
+      "bytes": 2501,
+      "sha256": "793d828b5f976e8b4e4e98507828a74249d54eb50324f96f3bddecfeeb224c99"
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/README.md",
+      "bytes": 1828,
+      "sha256": "e4893e585a6bc1d8e6e977ca7287b4d7d3946418ef8d6e49a1c8c23872daf8da",
+      "export_only_redaction": true
+    },
+    {
+      "file": "ProtocolGuard/rule_extraction/documentProcess/directoryStore/config.json",
+      "bytes": 1427,
+      "sha256": "bcc2adc10e01344a2a702c4a803881893e516d60c3b35b77602b5f1f9c538a5f",
+      "export_only_redaction": true
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "file": "rule_extraction/README.md",
+      "reason": "possible_embedded_credential_no_value_recorded",
+      "export_status": "included_with_credential_placeholder"
+    },
+    {
+      "file": "rule_extraction/documentProcess/directoryStore/config.json",
+      "reason": "possible_embedded_credential_no_value_recorded",
+      "export_status": "included_with_credential_placeholder"
+    }
+  ]
+}

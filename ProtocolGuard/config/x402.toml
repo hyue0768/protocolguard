@@ -1,0 +1,24 @@
+[project]
+protocol_name = "x402"
+protocol_version = "2"
+project_name = "official-python-sdk"
+# Paths below are for the separately rebuilt LLVM backend, not the Python SDK.
+rule_path = "ProtocolGuard/x402/output/processed_results.json"
+original_llvm_ir_path = ""
+[database]
+path = "ProtocolGuard/x402/output"
+[llm]
+# DeepSeek authorized by user for ProtocolGuard; credential is never stored here.
+llm_api_platform = "https://api.deepseek.com/v1"
+llm_model_deepseek_r1 = "deepseek-flash"
+llm_violation_repeat_times = 3
+llm_query_max_attempts = 1
+max_output_tokens = 6500
+[debug]
+code_slice_replace_mode = 0
+
+[credentials]
+provider = "deepseek"
+purpose = "ProtocolGuard only"
+environment_variable = "PROTOCOLGUARD_DEEPSEEK_API_KEY"
+persist_secret = false

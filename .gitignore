@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+*api-key*
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+build/

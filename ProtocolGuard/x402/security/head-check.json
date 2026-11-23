@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-13T16:38:57.831950+00:00",
+  "sha": "1a084343e165d6f61b60b34f6146d6e4a4a7f3ca",
+  "commit": {
+    "author": {
+      "name": "mintlify[bot]",
+      "email": "109931778+mintlify[bot]@users.noreply.github.com",
+      "date": "2026-11-13T16:34:31Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-11-13T16:34:31Z"
+    },
+    "message": "Document beforeCloseOrDistribute hook for TypeScript SVM (#4262)\n\n* Update docs/schemes/upto.mdx\n\nGenerated-By: mintlify-agent\n\nMintlify-Source: dashboard-editor\n\n* Update docs/schemes/batch-settlement.mdx\n\nGenerated-By: mintlify-agent\n\nMintlify-Source: dashboard-editor\n\n---------\n\nCo-authored-by: mintlify[bot] <109931778+mintlify[bot]@users.noreply.github.com>",
+    "tree": {
+      "sha": "9fa4ca3ff1cb2ce385c1c75a4a3b504516aa0373",
+      "url": "https://api.github.com/repos/x402-foundation/x402/git/trees/9fa4ca3ff1cb2ce385c1c75a4a3b504516aa0373"
+    },
+    "url": "https://api.github.com/repos/x402-foundation/x402/git/commits/1a084343e165d6f61b60b34f6146d6e4a4a7f3ca",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq9zwXCRC1aQ7uu5UhlAAAtgQQAHv6tiHJWdb/is2A0zbvGVb3\niQFBgHXGKtDtX5tUcJagQgaIKfhXwvw9LQm9B0LqfEDRdcfc4ErxY4VXKipegKb+\nN3Vl9I1vsowr0J5Xc6XqKxajmkSg9j2lhZ1akHU3hGnpiprlVeMFM/02NNS9cHbW\ns4I3YPAR7PqXn/2WnOCEg9j89fMHogjQPzAwIuwHRs7xVmFnaW5kmbaRfNqkY+CY\nNxA3RsoPpOO4mnq49OQktqYTGQpJeG/mWQ5a/EXtCGBf/3B1B8Ct7bn2kZLV13Vy\nXYx69EJet7k1uNTsXEwoXsMvho1axxFpHBQP9DDDGAKWdITM3GuZYwwDr+K4J3E6\nAf1eqNxP2TGYImWR2blAoKWupYEaY1vydwjPEUzFcj1QUa6yhJWycmqiO1BqNSMp\nBG68ivsvNWU01Z6dUJ63boHgTbbzB/v0Gt5Q+RV5YXK0Bi7gqRhN7YnocRsQ5zDW\nL69jWxSr3grR7Np1DCg1NLxuas1O84j0aQB0P8+Kx3Inc+uY0Vg3nF9NARMnPxR4\n3jO89NcIa0icyPRSKgZ96iWTaWjFaik9uxDEse2sxXhbcO2YyxphiP5fgGfhKNfn\nNFnzYwbPQZzM0d9N6WRKWayINQo08zhcgvWjCH/KGJW7glalrFvA7JlzWHbdymsA\nIKCW5YlJS3Jde+gmcPaJ\n=rZmp\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 9fa4ca3ff1cb2ce385c1c75a4a3b504516aa0373\nparent 85ba7be3af0ef08088b0bd0ce8e9a3def104f24d\nauthor mintlify[bot] <109931778+mintlify[bot]@users.noreply.github.com> 1794587671 +0100\ncommitter GitHub <noreply@github.com> 1794587671 +0100\n\nDocument beforeCloseOrDistribute hook for TypeScript SVM (#4262)\n\n* Update docs/schemes/upto.mdx\n\nGenerated-By: mintlify-agent\n\nMintlify-Source: dashboard-editor\n\n* Update docs/schemes/batch-settlement.mdx\n\nGenerated-By: mintlify-agent\n\nMintlify-Source: dashboard-editor\n\n---------\n\nCo-authored-by: mintlify[bot] <109931778+mintlify[bot]@users.noreply.github.com>",
+      "verified_at": "2026-11-13T16:34:32Z"
+    }
+  }
+}
